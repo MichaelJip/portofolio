@@ -12,7 +12,7 @@ export default function RightSide() {
       <div className="h-auto">
         <AboutMe />
       </div>
-      <div className="h-auto">
+      <div id={"resume-section"} className="h-auto">
         {ResumeData.map((val, index) => (
           <ResumeCard
             key={index}
@@ -41,7 +41,7 @@ export default function RightSide() {
           </p>
         </a>
       </div>
-      <div className="h-auto">
+      <div id="projects-section" className="h-auto">
         {ProjectData.map((val, index) => (
           <ProjectCard
             key={index}
