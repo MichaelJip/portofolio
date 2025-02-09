@@ -5,7 +5,7 @@ import { backgroundColor } from "@/lib/colors";
 export default function Home() {
   return (
     <div
-      className={`flex min-h-screen`}
+      className={`lg:flex min-h-screen`}
       style={{ background: backgroundColor }}
     >
       <Leftside

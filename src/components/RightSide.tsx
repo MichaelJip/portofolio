@@ -4,10 +4,11 @@ import Link from "next/link";
 import AboutMe from "./AboutMe";
 import ProjectCard from "./ProjectCard";
 import ResumeCard from "./ResumeCard";
+import Footer from "./Footer";
 
 export default function RightSide() {
   return (
-    <div className="w-2/3 p-10 space-y-6">
+    <div className="lg:w-2/3 lg:p-10 lg:space-y-6">
       <div className="h-auto">
         <AboutMe />
       </div>
@@ -25,7 +26,7 @@ export default function RightSide() {
           />
         ))}
       </div>
-      <div className="h-auto">
+      <div className="h-auto py-2 mx-2 lg:mx-0">
         <a
           href="/data/Michael_CV.pdf"
           target="_blank"
@@ -52,7 +53,7 @@ export default function RightSide() {
           />
         ))}
       </div>
-      <div className="h-auto">
+      <div className="h-auto py-4 mx-2 lg:mx-0">
         <Link href={"/archive"}>
           <p className="flex text-[#f0f6ff] transition duration-200 hover:text-[#63b5fa] font-semibold text-xl">
             View Full Project Archive
@@ -62,7 +63,9 @@ export default function RightSide() {
             />
           </p>
         </Link>
+        <Footer />
       </div>
+      <div className="h-[1rem]" />
     </div>
   );
 }
