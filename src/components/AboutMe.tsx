@@ -2,7 +2,6 @@
 export default function AboutMe() {
   return (
     <div className="mt-4">
-      <h2 className={`text-xl font-semibold text-[#f0f6ff]`}>About Me</h2>
       <p className={`text-lg text-[#dde4ee]`}>
         I am a passionate Mobile Developer with experience in building
         high-performance mobile applications using React Native and Flutter. My
