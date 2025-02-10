@@ -20,13 +20,13 @@ export default function ProjectCard({
   return (
     <a href={website} target="_blank" rel="noopener noreferrer">
       <div className="sm:p-2 sm:py-4 lg:flex lg:mt-5 lg:p-4 transition duration-200 rounded-lg group hover:bg-white/5">
-        <div className="mx-4 my-2 w-7/12 h-4/12 lg:w-2/12 lg:mx-0 lg:my-0 lg:h-1/12 border-4 border-white rounded-lg overflow-hidden">
+        <div className="mx-4 my-2 w-7/12 lg:w-2/12 lg:mx-0 lg:my-0  overflow-hidden">
           <Image
             src={image}
+            alt="Project Image"
             width={280}
             height={280}
-            alt="Movie Ticket"
-            className="object-cover"
+            className="w-full h-auto object-cover border-2 border-white rounded-lg"
           />
         </div>
         <div className="mx-4 w-10/12">
