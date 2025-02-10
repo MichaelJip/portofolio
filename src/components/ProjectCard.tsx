@@ -21,7 +21,13 @@ export default function ProjectCard({
     <a href={website} target="_blank" rel="noopener noreferrer">
       <div className="sm:p-2 sm:py-4 lg:flex lg:mt-5 lg:p-4 transition duration-200 rounded-lg group hover:bg-white/5">
         <div className="mx-4 my-2 w-7/12 h-4/12 lg:w-2/12 lg:mx-0 lg:my-0 lg:h-1/12 border-4 border-white rounded-lg overflow-hidden">
-          <Image src={image} fill alt="Movie Ticket" className="object-cover" />
+          <Image
+            src={image}
+            width={280}
+            height={280}
+            alt="Movie Ticket"
+            className="object-cover"
+          />
         </div>
         <div className="mx-4 w-10/12">
           <h2 className="flex text-xl font-semibold text-[#f0f6ff] transition duration-200 group-hover:text-[#63b5fa]">
