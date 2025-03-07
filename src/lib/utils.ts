@@ -19,7 +19,7 @@ interface ResumeArchiveProps {
 export const ResumeData: ResumeProps[] = [
   {
     startYear: 2024,
-    lastYear: "Present",
+    lastYear: 2025,
     company: "PT Altitude Solutions",
     jobPosition: "Technical Consultant",
     descriptionJob:
