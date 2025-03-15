@@ -18,7 +18,17 @@ export default function ProjectCard({
   image,
 }: ProjectProps) {
   return (
-    <a href={website} target="_blank" rel="noopener noreferrer">
+    <a
+      href={
+        website
+          ? website.startsWith("http")
+            ? website
+            : `https://${website}`
+          : "#"
+      }
+      target="_blank"
+      rel="noopener noreferrer"
+    >
       <div className="sm:p-2 sm:py-4 lg:flex lg:mt-5 lg:p-4 transition duration-200 rounded-lg group hover:bg-white/5">
         <div className="mx-4 my-2 w-7/12 lg:w-2/12 lg:mx-0 lg:my-0  overflow-hidden">
           <Image

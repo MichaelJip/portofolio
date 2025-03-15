@@ -77,20 +77,20 @@ export default function ArchivePage() {
                 </TableCell>
 
                 <TableCell className="text-white font-bold hidden md:table-cell">
-                  {val.link ? (
-                    <a
-                      href={val.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-[#dde4ee]  hover:text-[#4a90e2]"
-                    >
-                      {val.title !== "" ? val.title : val.project}
-                    </a>
-                  ) : val.title !== "" ? (
-                    val.title
-                  ) : (
-                    val.project
-                  )}
+                  <a
+                    href={
+                      val.link
+                        ? val.link.startsWith("http")
+                          ? val.link
+                          : `https://${val.link}`
+                        : "#"
+                    }
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[#dde4ee] hover:text-[#4a90e2]"
+                  >
+                    {val.title !== "" ? val.title : val.project}
+                  </a>
                 </TableCell>
               </TableRow>
             ))}

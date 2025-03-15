@@ -59,7 +59,7 @@ export default function Leftside({ description }: Props) {
           className="sm:text-xl lg:text-xl font-semibold"
           style={{ color: descColor }}
         >
-          Mobile Developer
+          Mobile Developer | Frontend Developer
         </h2>
         <p className="text-gray-300 mt-1 text-sm">{description}</p>
       </div>

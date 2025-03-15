@@ -44,12 +44,30 @@ export const ResumeData: ResumeProps[] = [
 
 export const ProjectData: ProjectProps[] = [
   {
+    image: "/GoFinance.jpg",
+    projectTitle: "Go Finance",
+    description:
+      "Go Finance is a demo ticketing platform for finance-related seminars and workshops, featuring secure payments and seamless authentication.",
+    website: "https://gofinance.michaeljip.com",
+    badge: [
+      "TypeScript",
+      "React Js",
+      "NodeJS",
+      "MongoDB",
+      "Next Js",
+      "Cloudinary",
+      "Midtrans",
+      "Zoho",
+      "Express Js",
+    ],
+  },
+  {
     image: "/MovieProject.png",
     projectTitle: "Beli Ticket Bioskop",
     description:
       "This project was a great learning experience, especially handling secure storage, API validation, and payment integration. One of the biggest challenges was structuring the backend for scalability, but using TypeScript and clean architecture principles really helped!",
     website: "https://github.com/MichaelJip/Frontend-Ticket",
-    badge: ["TypeScript", "React", "NodeJS", "MongoDB", "Redux"],
+    badge: ["TypeScript", "React", "NodeJS", "Express Js", "MongoDB", "Redux"],
   },
   {
     image: "/MJSalonKasir.png",
@@ -62,6 +80,24 @@ export const ProjectData: ProjectProps[] = [
 ];
 
 export const ResumeArchiveData: ResumeArchiveProps[] = [
+  {
+    project: "Go Finance",
+    link: "https://www.gofinance.michaeljip.com",
+    buildWith: [
+      "TypeScript",
+      "React Js",
+      "NodeJS",
+      "MongoDB",
+      "Next Js",
+      "Cloudinary",
+      "Midtrans",
+      "Zoho",
+      "Express Js",
+    ],
+    madeAt: "",
+    year: 2025,
+    title: "Website",
+  },
   {
     year: 2025,
     project: "Web Beli Tiket Bioskop",
