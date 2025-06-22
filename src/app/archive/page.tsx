@@ -32,6 +32,9 @@ export default function ArchivePage() {
                 Made at
               </TableHead>
               <TableHead className="text-white font-bold hidden md:hidden lg:table-cell">
+                Badge
+              </TableHead>
+              <TableHead className="text-white font-bold hidden md:hidden lg:table-cell">
                 Built with
               </TableHead>
               <TableHead className="text-white font-bold hidden md:table-cell">
@@ -61,6 +64,15 @@ export default function ArchivePage() {
 
                 <TableCell className="text-[#dde4ee] font-bold hidden md:hidden lg:table-cell">
                   {val.madeAt}
+                </TableCell>
+                <TableCell className="text-[#dde4ee] font-bold hidden md:hidden lg:table-cell">
+                  <Badge
+                    variant={"secondary"}
+                    style={{ backgroundColor: val.color, color: "white" }} // Apply HEX directly
+                    className="mt-1"
+                  >
+                    {val.badge}
+                  </Badge>
                 </TableCell>
                 <TableCell className="text-white font-bold hidden md:hidden lg:table-cell">
                   {val.buildWith.map((val, i) => (
